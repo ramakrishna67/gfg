@@ -9,7 +9,7 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GeeksForGeeks Student Chapter",
+  title: "GFG VIIT",
   description: "Official website for the GeeksForGeeks Student Chapter",
 };
 

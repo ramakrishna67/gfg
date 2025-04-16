@@ -27,12 +27,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 pl-2 pr-2 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="sticky top-0 pl-2 pr-2 z-50 w-full  bg-black backdrop-blur">
+      <div className="container flex h-16 items-center justify-around">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-[#0f9d58]">GFG</span>
-            <span className="hidden md:inline-block font-semibold">
+            <span className="text-xl font-bold text-[#13b567]">GFG</span>
+            <span className="hidden md:inline-block font-semibold text-white">
               Student Chapter
             </span>
           </Link>
@@ -45,10 +45,10 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-[#0f9d58]",
+                "text-sm font-medium text-white transition-colors hover:text-[#0f9d58]",
                 pathname === item.href
-                  ? "text-[#0f9d58] font-semibold"
-                  : "text-muted-foreground"
+                  ? "text-[#13b567] font-semibold"
+                  : " text-white"
               )}
             >
               {item.name}
@@ -58,7 +58,9 @@ export default function Header() {
 
         <div className="hidden md:flex gap-4">
           <Link href="/login">
-            <Button variant="outline">Login</Button>
+            <Button variant="outline" className="cursor-pointer">
+              Login
+            </Button>
           </Link>
           {/* <Link href="/register">
             <Button className="bg-[#0f9d58] hover:bg-[#0c8c4d]">
@@ -91,9 +93,9 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-[#0f9d58]",
+                    "text-sm font-medium transition-colors hover:text-[#13b567]",
                     pathname === item.href
-                      ? "text-[#0f9d58] font-semibold"
+                      ? "text-[#13b567] font-semibold"
                       : "text-muted-foreground"
                   )}
                   onClick={() => setIsMenuOpen(false)}

@@ -45,15 +45,15 @@ export default function login() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="flex min-h-screen items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-950 to-slate-800">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-[#0f9d58]">Welcome Back</h1>
-          <p className="mt-2 text-gray-500">
+          <p className="mt-2 text-gray-400">
             Sign in to your account to continue
           </p>
         </div>
-        <div className="mt-8 bg-white p-8 shadow rounded-lg">
+        <div className="mt-8 bg-neutral border-2 p-8 shadow rounded-lg">
           {error && (
             <div className="mb-4 p-4 text-sm border border-red-200 bg-red-50 text-red-600 rounded-md flex items-center">
               <AlertCircle className="h-4 w-4 mr-2" />
@@ -61,7 +61,7 @@ export default function login() {
             </div>
           )}
           <form className="space-y-6" onSubmit={handleSubmit}>
-            <div className="space-y-2">
+            <div className="space-y-2 text-white">
               <Label htmlFor="email">Email address</Label>
               <Input
                 id="email"
@@ -74,7 +74,7 @@ export default function login() {
                 placeholder="Enter your email"
               />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 text-white">
               <div className="flex items-center justify-between">
                 <Label htmlFor="password">Password</Label>
                 <Link
@@ -104,9 +104,9 @@ export default function login() {
             </Button>
           </form>
           <div className="mt-6 text-center text-sm">
-            <p className="text-gray-500">
+            <p className="text-gray-400">
               Only GFG Team has access. Kindly visit our{" "}
-              <a href="/blog" className="font-bold">
+              <a href="/blog" className="font-bold text-white">
                 Blog
               </a>{" "}
               for more information.

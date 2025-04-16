@@ -90,14 +90,14 @@ const blogPosts: BlogPost[] = [
 export default function BlogPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#0f9d58]/10">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-900 to-slate-700">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#0f9d58]">
                 Our Blog
               </h1>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Insights, tutorials, and updates from our GeeksForGeeks Student
                 Chapter.
               </p>
@@ -111,7 +111,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-b from-slate-800 to-slate-900">
         <div className="container px-4 md:px-6">
           <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
@@ -129,10 +129,10 @@ export default function BlogPage() {
                 </div>
                 <div className="flex-1 p-6 space-y-4">
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold leading-tight group-hover:text-[#0f9d58] transition-colors">
+                    <h3 className="text-xl font-bold text-white leading-tight group-hover:text-[#0f9d58] transition-colors">
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </h3>
-                    <p className="text-gray-500">{post.excerpt}</p>
+                    <p className="text-gray-300">{post.excerpt}</p>
                   </div>
                   <div className="flex items-center space-x-4 text-sm">
                     <div className="flex items-center space-x-1">

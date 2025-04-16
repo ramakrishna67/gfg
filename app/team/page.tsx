@@ -32,7 +32,7 @@ const teamMembers: TeamMember[] = [
     id: 2,
     name: "Geethanjali Rambarika",
     role: "Co-Lead",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/geetanjali.jpg?height=400&width=400",
     bio: "Full-stack developer with expertise in React and Node.js.",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -52,7 +52,7 @@ const teamMembers: TeamMember[] = [
     id: 4,
     name: "Palisetty Sai Dinesh",
     role: "Technical Lead",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/dinesh.jpg?height=400&width=400",
     bio: "Technical writer and web developer focused on creating educational content.",
     linkedin: "https://linkedin.com",
     email: "neha@example.com",
@@ -70,7 +70,7 @@ const teamMembers: TeamMember[] = [
     id: 6,
     name: "Beeram Narayana",
     role: "CP Lead",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/narayana.jpg?height=400&width=400",
     bio: "UI/UX designer with a keen eye for creating intuitive user experiences.",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -88,7 +88,7 @@ const teamMembers: TeamMember[] = [
     id: 8,
     name: "Buddha Sri Thrailokya Manvitha",
     role: "Event Lead",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/thrailokya.jpg?height=400&width=400",
     bio: "Focused on building partnerships with industry professionals and other student chapters.",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -97,7 +97,7 @@ const teamMembers: TeamMember[] = [
     id: 9,
     name: "NASHRAH FATHIMA",
     role: "Content Lead",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/fatima.jpg?height=400&width=400",
     bio: "Frontend developer specializing in React and modern JavaScript frameworks.",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -106,7 +106,7 @@ const teamMembers: TeamMember[] = [
     id: 10,
     name: "Velicheti Greeshma Sri ",
     role: "Social Media Lead",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/greeshma.jpg?height=400&width=400",
     bio: "Competitive programmer with multiple contest wins and mentoring experience.",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -124,14 +124,14 @@ export default function team() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#0f9d58]/10">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-900 to-slate-700">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#0f9d58]">
                 Our Team
               </h1>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Meet the dedicated individuals who make our GeeksForGeeks
                 Student Chapter possible.
               </p>
@@ -140,7 +140,7 @@ export default function team() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-b from-slate-600 to-slate-900">
         <div className="container px-4 md:px-6">
           {/* Leadership Row */}
           <div className="mb-16">
@@ -148,11 +148,11 @@ export default function team() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto ">
               {leaders.map((member) => (
                 <div key={member.id} className="flex flex-col items-center">
-                  <div className="bg-slate-100 relative w-full h-full rounded-tr-4xl rounded-bl-4xl p-6 border ">
-                    <div className="text-xl font-bold text-neutral-600 dark:text-white">
+                  <div className="bg-neutral relative w-full h-full rounded-tr-4xl rounded-bl-4xl p-6 border ">
+                    <div className="text-xl font-bold text-white dark:text-white">
                       {member.name}
                     </div>
-                    <div className="text-green-700 text-md max-w-sm mt-2 dark:text-neutral-300">
+                    <div className="text-green-400 text-md max-w-sm mt-2 dark:text-neutral-300">
                       {member.role}
                     </div>
                     <div className="relative w-46 mt-4">
@@ -164,7 +164,7 @@ export default function team() {
                         alt={member.name}
                       />
                     </div>
-                    <div className="flex gap-4 justify-start text-gray-600 pt-2">
+                    <div className="flex gap-4 justify-start text-white pt-2">
                       <Link href={member.github || "#"} target="_blank">
                         <LuGithub className="h-10 w-5" />
                       </Link>
@@ -182,11 +182,11 @@ export default function team() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {members.map((member) => (
               <div key={member.id} className="flex flex-col items-center">
-                <div className=" bg-slate-100 relative w-full h-full rounded-tr-4xl rounded-bl-4xl p-6 border ">
-                  <div className="text-xl font-bold text-neutral-600 dark:text-white">
+                <div className=" bg-neutral relative w-full h-full rounded-tr-4xl rounded-bl-4xl p-6 border ">
+                  <div className="text-xl font-bold text-white dark:text-white">
                     {member.name}
                   </div>
-                  <div className="text-green-700 text-md max-w-sm mt-2 dark:text-neutral-300">
+                  <div className="text-green-300 text-md max-w-sm mt-2 dark:text-neutral-300">
                     {member.role}
                   </div>
                   <div className="relative w-46 mt-4">
@@ -198,7 +198,7 @@ export default function team() {
                       alt={member.name}
                     />
                   </div>
-                  <div className="flex gap-4 justify-start text-gray-600 pt-2">
+                  <div className="flex gap-4 justify-start text-white pt-2">
                     <Link href={member.github || "#"} target="_blank">
                       <LuGithub className="h-10 w-5" />
                     </Link>

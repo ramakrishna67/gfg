@@ -88,7 +88,7 @@ export default function dashboard() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-slate-950 to-slate-800 text-white">
       <section className="w-full py-12 md:py-24 bg-[#0f9d58]/10">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
@@ -103,29 +103,50 @@ export default function dashboard() {
                   New Post
                 </Button>
               </Link>
-              <Button variant="outline" onClick={handleLogout}>
+              <Button
+                variant="outline"
+                onClick={handleLogout}
+                className="bg-neutral"
+              >
                 Logout
               </Button>
             </div>
           </div>
 
           <Tabs defaultValue="posts" className="w-full">
-            <TabsList className="grid w-full max-w-md grid-cols-2">
-              <TabsTrigger value="posts">My Posts</TabsTrigger>
-              <TabsTrigger value="profile">Profile</TabsTrigger>
+            <TabsList className="grid w-full max-w-md grid-cols-2 bg-neutral border-2 border-gray-600">
+              <TabsTrigger
+                value="posts"
+                className="data-[state=active]:bg-slate-600 text-white cursor-pointer"
+              >
+                My Posts
+              </TabsTrigger>
+              <TabsTrigger
+                value="profile"
+                className="data-[state=active]:bg-slate-600 text-white cursor-pointer"
+              >
+                Profile
+              </TabsTrigger>
             </TabsList>
             <TabsContent value="posts" className="mt-6">
               <div className="grid gap-6">
                 {posts.length > 0 ? (
                   posts.map((post) => (
-                    <Card key={post.id}>
+                    <Card
+                      key={post.id}
+                      className="bg-neutral border-2 border-gray-600"
+                    >
                       <CardHeader>
                         <div className="flex justify-between items-start">
                           <div>
-                            <CardTitle>{post.title}</CardTitle>
-                            <CardDescription>{post.excerpt}</CardDescription>
+                            <CardTitle className="text-white">
+                              {post.title}
+                            </CardTitle>
+                            <CardDescription className="text-gray-400">
+                              {post.excerpt}
+                            </CardDescription>
                           </div>
-                          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80">
+                          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-green-400 text-black">
                             {post.status === "published"
                               ? "Published"
                               : "Draft"}
@@ -133,20 +154,24 @@ export default function dashboard() {
                         </div>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-gray-400">
                           Created on {post.date}
                         </p>
                       </CardContent>
                       <CardFooter className="flex justify-between">
                         <div className="flex space-x-2">
-                          <Button variant="outline" size="sm">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="cursor-pointer"
+                          >
                             <Edit className="mr-2 h-4 w-4" />
                             Edit
                           </Button>
                           <Button
                             variant="outline"
                             size="sm"
-                            className="text-red-500 hover:text-red-700"
+                            className="text-red-500 hover:text-red-700 cursor-pointer"
                             onClick={() => handleDeletePost(post.id)}
                           >
                             <Trash2 className="mr-2 h-4 w-4" />
@@ -155,7 +180,11 @@ export default function dashboard() {
                         </div>
                         {post.status === "published" && (
                           <Link href={`/blog/${post.id}`}>
-                            <Button variant="ghost" size="sm">
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="text-white"
+                            >
                               <FileText className="mr-2 h-4 w-4" />
                               View
                             </Button>
@@ -185,10 +214,12 @@ export default function dashboard() {
               </div>
             </TabsContent>
             <TabsContent value="profile" className="mt-6">
-              <Card>
+              <Card className="bg-neutral">
                 <CardHeader>
-                  <CardTitle>Profile Information</CardTitle>
-                  <CardDescription>
+                  <CardTitle className="text-white">
+                    Profile Information
+                  </CardTitle>
+                  <CardDescription className="text-white">
                     Update your account information
                   </CardDescription>
                 </CardHeader>
@@ -198,24 +229,24 @@ export default function dashboard() {
                       <User className="h-12 w-12 text-gray-500" />
                     </div>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-white">
                     <Label htmlFor="name">Name</Label>
                     <Input id="name" defaultValue={userName} />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-white">
                     <Label htmlFor="email">Email</Label>
                     <Input
                       id="email"
                       defaultValue={localStorage.getItem("userEmail") || ""}
                     />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-white">
                     <Label htmlFor="bio">Bio</Label>
                     <Textarea id="bio" placeholder="Tell us about yourself" />
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="bg-[#0f9d58] hover:bg-[#0c8c4d]">
+                  <Button className="bg-[#0f9d58] hover:bg-[#0c8c4d] cursor-pointer">
                     Save Changes
                   </Button>
                 </CardFooter>
