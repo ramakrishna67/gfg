@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen justify-center items-center">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-950 to bg-slate-800 text-white justify-center">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-slate-950 to bg-slate-800 text-white flex justify-around">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  GeeksForGeeks VIIT
+                  Collaboration, Coding, and Career Growth
                 </h1>
                 <p className="max-w-[600px] text-white/90 md:text-xl">
                   Empowering students with technical knowledge, coding skills,
@@ -40,7 +40,7 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="/gfg viit logo.png"
+              src="/gfg1.png"
               width={550}
               height={550}
               alt="GeeksForGeeks Student Chapter"
