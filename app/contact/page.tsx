@@ -18,7 +18,8 @@ import { motion } from "framer-motion";
 // import { useToast } from "@/components/ui/use-toast";
 
 export default function ContactPage() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  const isSubmitting = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   //   const { toast } = useToast();
 
@@ -154,7 +155,7 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     className="w-full bg-gradient-to-r from-green-300 to-green-600 hover:from-green-400 hover:to-green-700 text-white"
-                    disabled={isSubmitting}
+                    // disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>

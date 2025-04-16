@@ -38,7 +38,7 @@ export default function LoginPage() {
         setError("Invalid credentials. Please try again.");
       }
     } catch (err) {
-      setError("An error occurred. Please try again.");
+      setError(`An error occurred. Please try again. ${err}`);
     } finally {
       setIsLoading(false);
     }
