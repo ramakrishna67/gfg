@@ -76,9 +76,9 @@ export default function Header() {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6" />
+            <X className="h-6 w-6 text-white" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <Menu className="h-6 w-6 text-white" />
           )}
         </button>
       </div>
