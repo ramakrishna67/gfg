@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+// import {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 // import { submitContactForm } from "./actions";
 // import { useToast } from "@/components/ui/use-toast";
@@ -96,7 +96,7 @@ export default function ContactPage() {
                         Message Sent!
                       </h3>
                       <p className="text-emerald-700 dark:text-emerald-400">
-                        Thank you for reaching out. We'll get back to you as
+                        Thank you for reaching out. We will get back to you as
                         soon as possible.
                       </p>
                       <Button
@@ -203,7 +203,7 @@ export default function ContactPage() {
                         <p className="text-slate-400 dark:text-slate-400">
                           Department of Computer Science and Engineering
                           <br />
-                          Vignan's Institue of Information Technology
+                          Vignans Institue of Information Technology
                           <br />
                           Visakhapatnam-530045
                         </p>

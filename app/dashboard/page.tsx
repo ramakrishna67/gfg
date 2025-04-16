@@ -29,7 +29,7 @@ type Post = {
   status: "draft" | "published";
 };
 
-export default function dashboard() {
+export default function DashboardPage() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const [posts, setPosts] = useState<Post[]>([]);
