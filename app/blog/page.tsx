@@ -102,11 +102,11 @@ export default function BlogPage() {
                 Chapter.
               </p>
             </div>
-            <Link href="/login">
+{/*             <Link href="/login">
               <Button className="bg-[#0f9d58] hover:bg-[#0c8c4d]">
                 Login to Write a Post
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
