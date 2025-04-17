@@ -168,8 +168,12 @@ export default function team() {
                       <Link href={member.github || "#"} target="_blank">
                         <LuGithub className="h-10 w-5" />
                       </Link>
+                      <Link href={member.email||"#"} target="_blank">
                       <Mail className="h-10 w-5" />
+                        </Link>
+                      <Link href={member.linkedin||"#"} target="_blank">
                       <FaLinkedinIn className="h-10 w-5" />
+                        </Link>
                     </div>
                   </div>
                 </div>
