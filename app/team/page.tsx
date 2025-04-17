@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
     role: "Lead",
     image: "/harika.jpg?height=400&width=400",
     bio: "Computer Science student passionate about algorithms and competitive programming.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/harika31/",
     github: "https://github.com",
     email: "aditya@example.com",
   },
@@ -34,7 +34,7 @@ const teamMembers: TeamMember[] = [
     role: "Co-Lead",
     image: "/geetanjali.jpg?height=400&width=400",
     bio: "Full-stack developer with expertise in React and Node.js.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/geethanjali-rambarika/",
     github: "https://github.com",
     email: "priya@example.com",
   },
@@ -54,7 +54,7 @@ const teamMembers: TeamMember[] = [
     role: "Technical Lead",
     image: "/dinesh.jpg?height=400&width=400",
     bio: "Technical writer and web developer focused on creating educational content.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/palisetty-sai-dinesh/",
     email: "neha@example.com",
   },
   {
@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
     role: "CP Lead",
     image: "/geetika.jpg?height=400&width=400",
     bio: "Passionate about organizing tech events and hackathons.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/geetika-sai-sravani-nahak",
     github: "https://github.com/GeetikaNahak",
   },
   {
@@ -72,7 +72,7 @@ const teamMembers: TeamMember[] = [
     role: "CP Lead",
     image: "/narayana.jpg?height=400&width=400",
     bio: "UI/UX designer with a keen eye for creating intuitive user experiences.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/beeram-narayana-6891b0275/",
     github: "https://github.com",
   },
   {
@@ -81,7 +81,7 @@ const teamMembers: TeamMember[] = [
     role: "Event Lead",
     image: "/pranamya.jpg?height=400&width=400",
     bio: "Digital marketing specialist with experience in social media campaigns.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/dmspranamya",
     email: "rohan@example.com",
   },
   {
@@ -90,7 +90,7 @@ const teamMembers: TeamMember[] = [
     role: "Event Lead",
     image: "/thrailokya.jpg?height=400&width=400",
     bio: "Focused on building partnerships with industry professionals and other student chapters.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/buddha-sri-thrailokya-ab0a2b248",
     github: "https://github.com",
   },
   {
@@ -99,7 +99,7 @@ const teamMembers: TeamMember[] = [
     role: "Content Lead",
     image: "/fatima.jpg?height=400&width=400",
     bio: "Frontend developer specializing in React and modern JavaScript frameworks.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/nashrahfathima/",
     github: "https://github.com",
   },
   {
@@ -108,7 +108,7 @@ const teamMembers: TeamMember[] = [
     role: "Social Media Lead",
     image: "/greeshma.jpg?height=400&width=400",
     bio: "Competitive programmer with multiple contest wins and mentoring experience.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/greeshma-chowdary/",
     github: "https://github.com",
   },
 ];
