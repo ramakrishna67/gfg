@@ -157,7 +157,7 @@ export default function ContactPage() {
                     className="w-full bg-gradient-to-r from-green-300 to-green-600 hover:from-green-400 hover:to-green-700 text-white"
                     // disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? "Send Message" : "Send Message"}
                   </Button>
                 </form>
               )}
