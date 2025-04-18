@@ -159,7 +159,7 @@ export default function team() {
                       <Image
                         src={member.image || `${member.name} Image`}
                         height="400"
-                        width="100"
+                        width="400"
                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                         alt={member.name}
                       />
@@ -197,7 +197,8 @@ export default function team() {
                     <Image
                       src={member.image || `${member.name} Image`}
                       height="400"
-                      width="100"
+                      width="400"
+                      // quality={100}
                       className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                       alt={member.name}
                     />
