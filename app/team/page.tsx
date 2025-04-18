@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "Harika Vavilapalli",
     role: "Lead",
-    image: "/haria.jpg?height=400&width=400",
+    image: "/harika.jpg?height=400&width=400",
     bio: "Computer Science student passionate about algorithms and competitive programming.",
     linkedin: "https://www.linkedin.com/in/harika31/",
     github: "https://github.com",
@@ -168,12 +168,12 @@ export default function team() {
                       <Link href={member.github || "#"} target="_blank">
                         <LuGithub className="h-10 w-5" />
                       </Link>
-                      <Link href={member.email||"#"} target="_blank">
-                      <Mail className="h-10 w-5" />
-                        </Link>
-                      <Link href={member.linkedin||"#"} target="_blank">
-                      <FaLinkedinIn className="h-10 w-5" />
-                        </Link>
+                      <Link href={member.email || "#"} target="_blank">
+                        <Mail className="h-10 w-5" />
+                      </Link>
+                      <Link href={member.linkedin || "#"} target="_blank">
+                        <FaLinkedinIn className="h-10 w-5" />
+                      </Link>
                     </div>
                   </div>
                 </div>
