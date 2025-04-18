@@ -42,7 +42,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: "Ramakrishna Paila",
     role: "Technical Lead",
-    image: "/Rk.jpg?height=400&width=400",
+    image: "/ram.jpg?height=400&width=400",
     bio: "Machine learning enthusiast with experience in Python and TensorFlow.",
     linkedin: "https://linkedin.com/in/pailaramakrishna",
     github: "https://github.com/ramakrishna67",
