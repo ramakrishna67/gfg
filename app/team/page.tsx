@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "Harika Vavilapalli",
     role: "Lead",
-    image: "/harika.jpg?height=400&width=400",
+    image: "/haria.jpg?height=400&width=400",
     bio: "Computer Science student passionate about algorithms and competitive programming.",
     linkedin: "https://www.linkedin.com/in/harika31/",
     github: "https://github.com",
